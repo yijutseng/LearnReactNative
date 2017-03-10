@@ -5,12 +5,19 @@
 
 // 1. Import libraries to help create a component
 import React from 'react';
-import {Text,AppRegistry} from 'react-native';
+import {AppRegistry,View} from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // 2. Create a component
-const App =() => (
-    <Text>Some Text</Text> //JSX
+const App =() => {
+    return (
+    <View>
+        <Header headerText={'Albums!'}/>
+        <AlbumList/>
+    </View>
 );
+};
 
 
 // 3. Render it to the devece
