@@ -1,11 +1,11 @@
 
 // 1. Import libraries to help create a component
 import React from 'react';
-import {Text,View} from 'react-native';
+import { Text, View } from 'react-native';
 
 // 2. Create a component
-const Header =(props) => {
-    const {textStyle,viewStyle}=styles;
+const Header = (props) => {
+    const { textStyle, viewStyle } = styles;
     return (
     <View style={viewStyle}>
         <Text style={textStyle}>{props.headerText}</Text>
@@ -14,19 +14,19 @@ const Header =(props) => {
 
 // 2.1. style
 const styles = {
-    viewStyle :{
+    viewStyle: {
         backgroundColor: '#F8F8F8',
         justifyContent: 'center',
         alignItems: 'center',
         height: 60,
         paddingTop: 15,
-        shadowColor:'#000',
-        shadowOffset: { width:0, height:2},
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.2,
-        elevation:2,
-        position:'relative'
+        elevation: 2,
+        position: 'relative'
     },
-    textStyle:{
+    textStyle: {
         fontSize: 20
     } 
 };

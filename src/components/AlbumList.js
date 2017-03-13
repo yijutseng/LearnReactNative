@@ -1,11 +1,11 @@
-import React,{Component} from 'react';
-import {ScrollView} from 'react-native';
+import React, { Component } from 'react';
+import { ScrollView } from 'react-native';
 import AlbumDetail from './AlbumDetail';
 
 //import axios from 'axios';
-class AlbumList extends Component{
-    state={albums:[]}; //only for class based component
-    componentWillMount(){ //loading data
+class AlbumList extends Component {
+    state={ albums: [] }; //only for class based component
+    componentWillMount() { //loading data
         //axios.get('https://rallycoding.herokuapp.com/api/music_albums')
         //    .then(response => console.log(response))
         //1. set default initial state of the component 
@@ -17,17 +17,17 @@ class AlbumList extends Component{
         );
     }
 
-    renderAlbums(){
-        return(
+    renderAlbums() {
+        return (
             this.state.albums.map(album => 
-            <AlbumDetail key={album.title} album={album}/>)
-        )
+            <AlbumDetail key={album.title} album={album} />)
+        );
     }
-    render (){
+    render() {
         //map method
-        console.log(this.state)
+        console.log(this.state);
         //Life cycle method
-        return(
+        return (
             <ScrollView>
                 {this.renderAlbums()}
             </ScrollView>
@@ -37,4 +37,3 @@ class AlbumList extends Component{
 
 export default AlbumList;
 
-//
