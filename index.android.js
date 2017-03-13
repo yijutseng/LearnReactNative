@@ -5,16 +5,16 @@
 
 // 1. Import libraries to help create a component
 import React from 'react';
-import {AppRegistry,View} from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
 // 2. Create a component
-const App =() => {
+const App = () => {
     return (
     <View>
-        <Header headerText={'Albums!'}/>
-        <AlbumList/>
+        <Header headerText={'Albums!'} />
+        <AlbumList />
     </View>
 );
 };
@@ -22,4 +22,4 @@ const App =() => {
 
 // 3. Render it to the devece
 //Only root component uses AppRegistry
-AppRegistry.registerComponent('LearnReactNative', ()=>App);
+AppRegistry.registerComponent('LearnReactNative', () => App);
